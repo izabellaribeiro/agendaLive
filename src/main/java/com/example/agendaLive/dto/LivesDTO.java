@@ -1,8 +1,6 @@
-package com.dto;
+package com.example.agendaLive.dto;
 
-import ch.qos.logback.core.util.COWArrayList;
-import com.model.Live;
-import lombok.AllArgsConstructor;
+import com.example.agendaLive.model.Live;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

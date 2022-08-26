@@ -1,7 +1,7 @@
-package com.controller;
+package com.example.agendaLive.controller;
 
-import com.dto.LiveDTO;
-import com.service.LiveServiceImpl;
+import com.example.agendaLive.dto.LiveDTO;
+import com.example.agendaLive.service.LiveServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +15,7 @@ public class LiveApiController {
 
     @PostMapping("/")
     public ResponseEntity<?> toRegistrerLive(@RequestBody LiveDTO liveDTO) {
+        System.out.println("tô aqui");
         return this.liveService.toRegistrerLive(liveDTO);
     }
 
