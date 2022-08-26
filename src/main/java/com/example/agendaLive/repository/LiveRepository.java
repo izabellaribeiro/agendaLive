@@ -1,6 +1,6 @@
-package com.repository;
+package com.example.agendaLive.repository;
 
-import com.model.Live;
+import com.example.agendaLive.model.Live;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.Optional;

@@ -1,9 +1,9 @@
-package com.service;
+package com.example.agendaLive.service;
 
-import com.dto.LiveDTO;
-import com.dto.LivesDTO;
-import com.model.Live;
-import com.repository.LiveRepository;
+import com.example.agendaLive.dto.LiveDTO;
+import com.example.agendaLive.dto.LivesDTO;
+import com.example.agendaLive.model.Live;
+import com.example.agendaLive.repository.LiveRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +22,7 @@ public class LiveServiceImpl {
 
         this.liveRepository.save(live);
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(liveDTO);
+        return ResponseEntity.status(HttpStatus.CREATED).body(live.getDto());
     }
 
     public ResponseEntity<?> toEditLive(String liveName, LiveDTO liveDTO) {

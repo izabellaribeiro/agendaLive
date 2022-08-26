@@ -1,6 +1,6 @@
-package com.service;
+package com.example.agendaLive.service;
 
-import com.dto.LiveDTO;
+import com.example.agendaLive.dto.LiveDTO;
 import org.springframework.http.ResponseEntity;
 
 public interface LiveService {
