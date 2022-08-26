@@ -1,0 +1,183 @@
+<div class="screen">
+  <a href="https://github.com/izabellaribeiro/agendaLive-app" target="_blank">
+    <img src="../../../assets/githubLink.png" class="github" />
+  </a>
+
+  <div class="container">
+    <div class="title">AgendaLive</div>
+    <div class="banner"></div>
+    <div class="text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore.
+    </div>
+    <button type="button" class="button" (click)="showLogin()">Login</button>
+    <div class="signtext">Ainda não possui uma conta?</div>
+    <button type="button" class="sign" (click)="showRegister()">
+      Cadastre-se
+    </button>
+
+    <div
+      [style.display]="showModalLogin ? 'block' : 'none'"
+      class="modalLogin"
+      id="imagemodal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Login</h4>
+          </div>
+          <div class="modal-body">
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <input
+                  type="text"
+                  formControlName="email"
+                  class="form-control"
+                  [ngClass]="{ 'is-invalid': submitted }"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  formControlName="password"
+                  class="form-control"
+                  [ngClass]="{ 'is-invalid': submitted }"
+                  placeholder="Senha"
+                />
+              </div>
+              <button type="button" class="sign" (click)="showForgot()">
+                Esqueci minha senha
+              </button>
+
+              <button routerLink="home" type="submit" class="login-button">
+                Entrar
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="back-button"
+              data-dismiss="modalLogin"
+              (click)="hideLogin()"
+            >
+              <mat-icon>arrow_back</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    [style.display]="showModalRegister ? 'block' : 'none'"
+    class="modalRegister"
+    id="imagemodalr"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="myModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Registro</h4>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <input
+                type="text"
+                formControlName="firstname"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': submitted }"
+                placeholder="Primeiro nome"
+              />
+              <div *ngIf="submitted" class="invalid-feedback"></div>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                formControlName="email"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': submitted }"
+                placeholder="Email"
+              />
+              <div *ngIf="submitted" class="invalid-feedback"></div>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="password"
+                formControlName="password"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': submitted }"
+                placeholder="Senha"
+              />
+              <div *ngIf="submitted" class="invalid-feedback"></div>
+            </div>
+            <button type="submit" class="register-button">Registrar</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="back-button"
+            data-dismiss="modalRegister"
+            (click)="hideRegister()"
+          >
+            <mat-icon>arrow_back</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    [style.display]="showModalForgot ? 'block' : 'none'"
+    class="modalForgot"
+    id="imagemodal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="myModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Recuperação de senha</h4>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <input
+                type="text"
+                formControlName="email"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': submitted }"
+                placeholder="Email"
+              />
+            </div>
+
+            <button type="submit" class="login-button">Enviar</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="back-button"
+            data-dismiss="modalForgot"
+            (click)="hideForgot()"
+          >
+            <mat-icon>arrow_back</mat-icon   >
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

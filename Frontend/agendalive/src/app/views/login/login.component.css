@@ -1,0 +1,276 @@
+
+.container {
+  width: 600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  position:relative;
+  top: 40%;
+  left: 10%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 90px;
+  font-weight: 600;
+  color: hotpink;
+  
+}
+
+.banner {
+  position:relative;
+  top: 50%;
+  background-image: url('../../../assets/apresentation.png');
+  width: 250px;
+  height: 365px;
+  margin-right: auto;
+}
+
+.text {
+
+  position:relative;
+  top: 0%;
+  left: 45%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  color:darkslateblue ;
+  max-height: 200px;
+  max-width: 200px;
+
+}
+
+.github{
+  background-image: url(/../agendaLive-app/agendalive/src/assets/githubLink.png);
+
+  position: relative;
+  left:90%;
+  top:20px;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  
+}
+
+.sign{
+  position:relative;
+  top: 10%;
+  left: 45%;
+  font-family: 'Roboto';
+  font-style: normal;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 500;
+  color:hotpink;
+  max-height: 200px;
+  max-width: 200px;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background: none;
+
+  
+}
+
+.signtext{
+  position:relative;
+  top: 9%;
+  left: 45%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  color:hotpink;
+  max-height: 200px;
+  max-width: 200px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+
+  position: relative;
+  left: 50%;
+
+  top: 5%;
+  cursor: pointer;
+  width: 90px;
+  height: 50px;
+  color: white;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  background: darkslateblue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  align-items:center;
+  border-color: transparent ;
+
+  
+
+}
+
+ 
+.modalLogin {
+  position:relative;
+  top:-270px;
+  width: 600px;
+  height: 400px;
+  background-color:white;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: table;
+} 
+
+.modalRegister {
+  position:relative;
+  top:-290px;
+  width: 600px;
+  height: 400px;
+  background-color:white;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: table;
+} 
+
+.modalForgot {
+  position:relative;
+  top:-295px;
+  width: 600px;
+  height: 400px;
+  background-color:white;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: table;
+} 
+
+.modal-title{
+
+  position:relative;
+  top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  color:darkslateblue ;
+  max-height: 200px;
+
+
+}
+
+.form-control{
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 30px;
+  display: flex;
+  color: darkslateblue  ;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 18px;
+
+}
+
+.screen{
+  height: 980px;
+}
+.login-button{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+
+  position: relative;
+  left: 42%;
+  top: 50px;
+  cursor: pointer;
+  width: 90px;
+  height: 50px;
+  color: white;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  background: darkslateblue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  align-items:center;
+  border-color: transparent ;
+
+
+}
+
+
+.register-button{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  width: 120px;
+  height: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  top: 50px;
+  cursor: pointer;
+  
+  color: white;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  background: darkslateblue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  align-items:center;
+  border-color: transparent ;
+
+
+}
+.back-button{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+
+  position: relative;
+  top: 80px;
+  left: -75%;
+  cursor: pointer;
+  width: 70px;
+  height: 35px;
+  color: white;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  background: hotpink;
+  border-radius: 20px;
+  align-items:center;
+  border-color: white;
+  border-color: transparent ;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
