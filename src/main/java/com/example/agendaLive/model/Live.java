@@ -34,17 +34,17 @@ public class Live {
     public Live(LiveDTO liveDTO) {
         this.liveName = liveDTO.getLiveName();
         this.channelName = liveDTO.getChannelName();
-        this.localDate = LocalDate.parse(liveDTO.getLocalDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        this.localDate = LocalDate.parse(liveDTO.getLocalDate(), DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         this.liveLink = liveDTO.getLiveLink();
-        this.registrationDate = LocalDate.parse(liveDTO.getRegistrationDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        this.registrationDate = LocalDate.parse(liveDTO.getRegistrationDate(), DateTimeFormatter.ofPattern("dd-MM-yyyy"));
     }
 
     public void editar(LiveDTO liveDTO) {
         this.setLiveName(liveDTO.getLiveName());
         this.setChannelName(liveDTO.getChannelName());
-        this.setLocalDate(LocalDate.parse(liveDTO.getLocalDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+        this.setLocalDate(LocalDate.parse(liveDTO.getLocalDate(), DateTimeFormatter.ofPattern("dd-MM-yyyy")));
         this.setLiveLink(liveDTO.getLiveLink());
-        this.setRegistrationDate(LocalDate.parse(liveDTO.getRegistrationDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+        this.setRegistrationDate(LocalDate.parse(liveDTO.getRegistrationDate(), DateTimeFormatter.ofPattern("dd-MM-yyyy")));
     }
 
     public LiveDTO getDto(){
